@@ -7,13 +7,13 @@ define(function(){
 
     internals.routes = {
         myFirstRoute: {
-            hash: '#first',
-            controller: 'my-controller'
+            hash: '#current',
+            controller: 'comic-list-controller'
         },
 
         mySecondRoute: {
-            hash: '#second',
-            controller: 'my-other-controller'
+            hash: '#history',
+            controller: 'xkcd-comic-history-controller'
         }
     };
 
@@ -23,7 +23,7 @@ define(function(){
     externals.start = function(){
         
         window.location.hash = window.location.hash || internals.routes[internals.defaultRoute].hash;
-        setInterval(hashCheck, 1000);
+        setInterval(hashCheck, 100);
     }
 
     function hashCheck(){
@@ -60,7 +60,7 @@ define(function(){
                 controller.start();
 
             } catch (error) {
-                console.log(error.stack);
+                console.log(error.message + " " + error.stack);
                 loadDefaultRoute();
             }
         });

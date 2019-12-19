@@ -1,0 +1,25 @@
+{
+  "name": "restful-spa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dominor/restful-spa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dominor/restful-spa/issues"
+  },
+  "homepage": "https://github.com/Dominor/restful-spa#readme",
+  "dependencies": {
+    "html5-boilerplate": "^7.3.0"
+  }
+}
